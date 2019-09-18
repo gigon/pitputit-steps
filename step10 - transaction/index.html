@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pitputit</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+ 
+<div id="wrapper">
+    <div id="menu">
+        <p class="welcome"><span id="spanUserName"></span><img src="" class="userIcon"></img></p>
+        <p id="pLogin"><a id="buttonLogin" href="#">Log in</a></p>
+        <p id="pLogout"><a id="buttonLogout" href="#">Log out</a></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div id="divChatBox"></div>
+    
+    <div id="divNewMessage">
+        <form name="message" action="">
+            <p>New Message</p>
+            <input id="inputMediaCapture" type="file" accept="image/*,capture=camera"></input>
+            <input id="textUserMsg" type="text" size="63" />
+            <input id="buttonSubmitMsg" type="submit" value="Send" />
+        </form>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

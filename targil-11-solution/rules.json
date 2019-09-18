@@ -1,0 +1,14 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "messages": {
+        "$messageId": {
+            ".validate": 
+        	"newData.hasChildren(['userKey','userName']) && 
+          		((newData.hasChild('messageText') && newData.child('messageText').val().length>0) || 			newData.hasChild('imageUrl'))",
+          "messageText": { ".validate":  "newData.isString() && newData.val().length < 201"  }
+      }
+    }
+  }
+}

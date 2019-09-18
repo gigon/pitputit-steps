@@ -1,0 +1,11 @@
+{
+  "rules": {
+    ".read": true,
+    "messages": {
+      "$messageKey": {
+        ".write": "auth.provider == 'google' 
+               && newData.child('userKey').val() == auth.uid"     
+      }
+    }
+  }
+}
